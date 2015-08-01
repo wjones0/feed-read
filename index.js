@@ -42,13 +42,14 @@ var FeedRead = module.exports = function(feed_url, callback) {
 // 
 // Returns "atom", "rss", or false when it is neither.
 FeedRead.identify = function(xml) {
-  if (/<(rss|rdf)\b/i.test(xml)) {
-    return "rss";
-  } else if (/<feed\b/i.test(xml)) {
-    return "atom";
-  } else {
-    return false;
-  }
+  // if (/<(rss|rdf)\b/i.test(xml)) {
+  //   return "rss";
+  // } else if (/<feed\b/i.test(xml)) {
+  //   return "atom";
+  // } else {
+  //   return false;
+  // }
+  return "rss";
 }
 
 
